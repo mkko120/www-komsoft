@@ -16,7 +16,7 @@ $db = new Database('../../database/users.db.sqlite');
 $res = $db->insert('Users','username, email, password, role', '"user1", "user1@example.com", "password", "user"');
 var_dump($res);
 $res = $db->select('*', 'Users', ' ');
-var_dump($res->fetchArray());
+var_dump($res);
 
 
 var_dump($res);
